@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="true"
+        jar="C:\Users\louis\Desktop\Projets\Labyrinthe\app\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="1b516b929c3b112c33e30fc0e71820168a214206">
+        <dex dex="C:\Users\louis\Desktop\Projets\Labyrinthe\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run_e63e30ff776b86890ff9f6c8b692b61e707e7c2a\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\louis\Desktop\Projets\Labyrinthe\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="edf89564f1ddfcf1569b7e42eee8dffc848d5446">
+        <dex dex="C:\Users\louis\Desktop\Projets\Labyrinthe\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run-bootstrap_ef60897d5be8324340d8ac56c24c099156534059\classes.dex" />
+    </item>
+
+</items>
