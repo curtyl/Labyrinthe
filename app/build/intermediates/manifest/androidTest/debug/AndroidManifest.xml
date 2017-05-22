@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="sdz.chapitreCinq.test">
+    package="sdz.Labyrinthe.test">
 
     <uses-sdk android:minSdkVersion="7" android:targetSdkVersion="7" />
 
@@ -9,8 +9,8 @@
     </application>
 
     <instrumentation android:name="android.test.InstrumentationTestRunner"
-                     android:targetPackage="sdz.chapitreCinq"
+                     android:targetPackage="sdz.Labyrinthe"
                      android:handleProfiling="false"
                      android:functionalTest="false"
-                     android:label="Tests for sdz.chapitreCinq"/>
+                     android:label="Tests for sdz.Labyrinthe"/>
 </manifest>

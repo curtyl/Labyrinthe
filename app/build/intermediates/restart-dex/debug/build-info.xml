@@ -5,19 +5,19 @@
     density="xxhdpi"
     format="8"
     plugin-version="2.2.3"
-    timestamp="170686344954513"
+    timestamp="600283617831830"
     token="-7252919622485321684"
     verifier="FULL_BUILD_REQUESTED" >
 
     <task
         name="javac"
-        duration="0" />
+        duration="201" />
     <task
         name="instant-run-dex"
         duration="0" />
     <task
         name="instant-run-transform"
-        duration="0" />
+        duration="15" />
     <task
         name="verifier"
         duration="0" />
@@ -27,7 +27,7 @@
         type="MAIN" />
 
     <build
-        timestamp="170686344954513"
+        timestamp="600283617831830"
         verifier="FULL_BUILD_REQUESTED" >
         <artifact
             location="C:\Users\louis\Desktop\Projets\Labyrinthe\app\build\outputs\apk\app-debug.apk"

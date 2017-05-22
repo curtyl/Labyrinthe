@@ -5,7 +5,7 @@ android {
     buildToolsVersion "25.0.2"
 
     defaultConfig {
-        applicationId "sdz.chapitreCinq"
+        applicationId "sdz.Labyrinthe"
         minSdkVersion 7
         targetSdkVersion 7
     }

@@ -1,5 +1,5 @@
 #Internal package file, do not edit.
-#Mon Apr 10 11:30:56 CEST 2017
+#Mon May 15 10:12:30 CEST 2017
 1.base=C\:\\Users\\louis\\Desktop\\Projets\\Labyrinthe\\app\\build\\intermediates\\res\\resources-debug.ap_
 1.file=C\:\\Users\\louis\\Desktop\\Projets\\Labyrinthe\\app\\build\\intermediates\\res\\resources-debug.ap_\\res\\layout\\main.xml
 2.base=C\:\\Users\\louis\\Desktop\\Projets\\Labyrinthe\\app\\build\\intermediates\\res\\resources-debug.ap_
