@@ -11,33 +11,7 @@
                     "endOffset": 98
                 },
                 "from": {
-                    "file": "C:\\Users\\louis\\Desktop\\Projets\\Labyrinthe\\app\\src\\main\\res\\values\\strings.xml",
-                    "position": {
-                        "startLine": 4,
-                        "startColumn": 4,
-                        "startOffset": 131,
-                        "endColumn": 47,
-                        "endOffset": 174
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 3,
-                    "startColumn": 4,
-                    "startOffset": 103,
-                    "endColumn": 74,
-                    "endOffset": 173
-                },
-                "from": {
-                    "file": "C:\\Users\\louis\\Desktop\\Projets\\Labyrinthe\\app\\src\\main\\res\\values\\strings.xml",
-                    "position": {
-                        "startLine": 3,
-                        "startColumn": 4,
-                        "startOffset": 56,
-                        "endColumn": 74,
-                        "endOffset": 126
-                    }
+                    "file": "C:\\Users\\louis\\Desktop\\Projets\\Labyrinthe\\app\\src\\main\\res\\values\\strings.xml"
                 }
             }
         ]

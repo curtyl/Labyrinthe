@@ -3,14 +3,17 @@ package sdz.Labyrinthe;
 import android.graphics.Color;
 import android.graphics.RectF;
 
-public class Boule {
+class Boule {
 	// Rayon de la boule
-	public static final int RAYON = 25;
+	public static final int RAYON = 15;
 	
 	// Couleur de la boule
 	private int mCouleur = Color.YELLOW;
 	public int getCouleur() {
 		return mCouleur;
+	}
+	public void setCouleur(int pColor) {
+		this.mCouleur = pColor;
 	}
 	
 	// Vitesse maximale autorisée pour la boule
@@ -40,7 +43,7 @@ public class Boule {
 	public float getX() {
 		return mX;
 	}
-	public void setPosX(float pPosX) {
+	private void setPosX(float pPosX) {
 		mX = pPosX;
 
 		// Si la boule sort du cadre, on rebondit
@@ -60,7 +63,7 @@ public class Boule {
 		return mY;
 	}
 
-	public void setPosY(float pPosY) {
+	private void setPosY(float pPosY) {
 		mY = pPosY;
 		if(mY < RAYON) {
 			mY = RAYON;
@@ -73,18 +76,10 @@ public class Boule {
 	
 	// Vitesse sur l'axe x
 	private float mSpeedX = 0;
-	// Utilisé quand on rebondit sur les murs horizontaux
-	public void changeXSpeed() {
-		mSpeedX = -mSpeedX;
-	}
-	
+
 	// Vitesse sur l'axe y
 	private float mSpeedY = 0;
-	// Utilisé quand on rebondit sur les murs verticaux
-	public void changeYSpeed() {
-		mSpeedY = -mSpeedY;
-	}
-	
+
 	// Taille de l'écran en hauteur
 	private int mHeight = -1;
 	public void setHeight(int pHeight) {

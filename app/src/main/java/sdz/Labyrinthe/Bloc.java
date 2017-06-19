@@ -3,10 +3,8 @@ package sdz.Labyrinthe;
 import android.graphics.RectF;
 
 public class Bloc {
-	enum  Type { TROU, DEPART, ARRIVEE };
-	
-	private float SIZE = Boule.RAYON * 3;
-	
+	enum  Type { TROU, DEPART, ARRIVEE }
+
 	private Type mType = null;
 	private RectF mRectangle = null;
 	
@@ -20,6 +18,7 @@ public class Bloc {
 
 	public Bloc(Type pType, int pX, int pY) {
 		this.mType = pType;
+		float SIZE = Boule.RAYON * 3;
 		this.mRectangle = new RectF(pX * SIZE, pY * SIZE, (pX + 1) * SIZE, (pY + 1) * SIZE);
 	}
 }

@@ -10,33 +10,26 @@ import android.view.SurfaceHolder;
 import android.view.SurfaceView;
 
 public class LabyrintheView extends SurfaceView implements SurfaceHolder.Callback {
-	Boule mBoule;
-	public Boule getBoule() {
-		return mBoule;
-	}
+	private Boule mBoule;
 
 	public void setBoule(Boule pBoule) {
 		this.mBoule = pBoule;
 	}
 
-	ColorBackGround mColor;
+	private ColorBackGround mColor;
 
-	public ColorBackGround getmColor() { return mColor;}
 	public void setmColor(ColorBackGround pColor) { this.mColor = pColor;}
 
-	SurfaceHolder mSurfaceHolder;
-	DrawingThread mThread;
+	private final SurfaceHolder mSurfaceHolder;
+	private final DrawingThread mThread;
 
 	private List<Bloc> mBlocks = null;
-	public List<Bloc> getBlocks() {
-		return mBlocks;
-	}
 
 	public void setBlocks(List<Bloc> pBlocks) {
 		this.mBlocks = pBlocks;
 	}
 
-	Paint mPaint; 
+	private final Paint mPaint;
 
 	public LabyrintheView(Context pContext) {
 		super(pContext);
@@ -103,7 +96,7 @@ public class LabyrintheView extends SurfaceView implements SurfaceHolder.Callbac
 			try {
 				mThread.join();
 				retry = false;
-			} catch (InterruptedException e) {}
+			} catch (InterruptedException ignored) {}
 		}
 		
 	}
@@ -130,7 +123,7 @@ public class LabyrintheView extends SurfaceView implements SurfaceHolder.Callbac
 				// Pour dessiner à 50 fps
 				try {
 					Thread.sleep(20);
-				} catch (InterruptedException e) {}
+				} catch (InterruptedException ignored) {}
 			}
 		}
 	}

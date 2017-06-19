@@ -1,4 +1,4 @@
-#Mon May 22 10:48:22 CEST 2017
+#Mon Jun 19 09:22:21 CEST 2017
 base.0=C\:\\Users\\louis\\Desktop\\Projets\\Labyrinthe\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10\\instant-run-bootstrap_ef60897d5be8324340d8ac56c24c099156534059
 renamed.1=classes.dex
 renamed.0=classes2.dex

@@ -7,7 +7,7 @@
         jumboMode="true"
         optimize="true"
         revision="25.0.2"
-        sha1="00652753db2f38be14c690be238fb0d36be8f929">
+        sha1="76e0dd120070bd0b657e7e6e38d03c4e2e8f79a0">
         <dex dex="C:\Users\louis\Desktop\Projets\Labyrinthe\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run_e63e30ff776b86890ff9f6c8b692b61e707e7c2a\classes.dex" />
     </item>
     <item
@@ -16,7 +16,7 @@
         jumboMode="true"
         optimize="true"
         revision="25.0.2"
-        sha1="7d1ae8e1a184a2c3f56cb6628c3b1d54bb093b6d">
+        sha1="857c84c48f026bd99cabd8ec87ffc2fd184770a6">
         <dex dex="C:\Users\louis\Desktop\Projets\Labyrinthe\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run-bootstrap_ef60897d5be8324340d8ac56c24c099156534059\classes.dex" />
     </item>
 

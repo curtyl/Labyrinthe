@@ -1,5 +1,5 @@
 #Internal package file, do not edit.
-#Mon May 15 10:12:36 CEST 2017
+#Mon Jun 19 09:22:21 CEST 2017
 8.set=DEX
 1.base=C\:\\Users\\louis\\Desktop\\Projets\\Labyrinthe\\app\\build\\intermediates\\res\\resources-debug.ap_
 1.file=C\:\\Users\\louis\\Desktop\\Projets\\Labyrinthe\\app\\build\\intermediates\\res\\resources-debug.ap_\\resources.arsc

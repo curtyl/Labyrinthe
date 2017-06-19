@@ -11,19 +11,19 @@ import android.hardware.Sensor;
 import android.hardware.SensorEvent;
 import android.hardware.SensorEventListener;
 import android.hardware.SensorManager;
+import android.util.Log;
 
-public class LabyrintheEngine {
+import static android.content.ContentValues.TAG;
+
+class LabyrintheEngine {
 	private Boule mBoule = null;
-	public Boule getBoule() {
-		return mBoule;
-	}
 
 	public void setBoule(Boule pBoule) {
 		this.mBoule = pBoule;
 	}
 
 	private ColorBackGround mColor;
-	public ColorBackGround getmColor() { return mColor;}
+
 	public void setmColor(ColorBackGround pColor) { this.mColor = pColor;}
 
 
@@ -35,8 +35,9 @@ public class LabyrintheEngine {
 	private SensorManager mManager = null;
 	private Sensor mAccelerometre = null;
 	private Sensor mLight = null;
+	private Sensor mMagnetic = null;
 
-	SensorEventListener mSensorEventListenerAcc = new SensorEventListener() {
+	private final SensorEventListener mSensorEventListenerAcc = new SensorEventListener() {
 
 		@Override
 		public void onSensorChanged(SensorEvent pEvent) {
@@ -77,7 +78,7 @@ public class LabyrintheEngine {
 		}
 	};
 
-	SensorEventListener mSensorEventListenerLight = new SensorEventListener() {
+	private final SensorEventListener mSensorEventListenerLight = new SensorEventListener() {
 
 		@Override
 		public void onSensorChanged(SensorEvent pEvent) {
@@ -96,11 +97,32 @@ public class LabyrintheEngine {
 		}
 	};
 
+	private final SensorEventListener mSensorEventListenerMagnetic = new SensorEventListener() {
+
+		@Override
+		public void onSensorChanged(SensorEvent pEvent) {
+			Log.d(TAG, "onSensorChanged: values = " + pEvent.values[0] + pEvent.values[1] + pEvent.values[2]);
+			if (pEvent.values[0] > -45 ){
+				mBoule.setCouleur(Color.YELLOW);
+			}else if (pEvent.values[0] < -45 && pEvent.values[0] > -55){
+				mBoule.setCouleur(Color.RED);
+			}else{
+				mBoule.setCouleur(Color.BLACK);
+			}
+		}
+
+		@Override
+		public void onAccuracyChanged(Sensor pSensor, int pAccuracy) {
+
+		}
+	};
+
 	public LabyrintheEngine(LabyrintheActivity pView) {
 		mActivity = pView;
 		mManager = (SensorManager) mActivity.getBaseContext().getSystemService(Service.SENSOR_SERVICE);
 		mAccelerometre = mManager.getDefaultSensor(Sensor.TYPE_ACCELEROMETER);
 		mLight = mManager.getDefaultSensor(Sensor.TYPE_LIGHT);
+		mMagnetic = mManager.getDefaultSensor(Sensor.TYPE_MAGNETIC_FIELD);
 	}
 
 	// Remet à zéro l'emplacement de la boule
@@ -112,12 +134,14 @@ public class LabyrintheEngine {
 	public void stop() {
 		mManager.unregisterListener(mSensorEventListenerAcc, mAccelerometre);
 		mManager.unregisterListener(mSensorEventListenerLight, mLight);
+		mManager.unregisterListener(mSensorEventListenerMagnetic, mMagnetic);
 	}
 
 	// Redémarre le capteur
 	public void resume() {
 		mManager.registerListener(mSensorEventListenerAcc, mAccelerometre, SensorManager.SENSOR_DELAY_GAME);
 		mManager.registerListener(mSensorEventListenerLight, mLight, SensorManager.SENSOR_DELAY_GAME);
+		mManager.registerListener(mSensorEventListenerMagnetic, mMagnetic, SensorManager.SENSOR_DELAY_GAME);
 	}
 
 	// Construit le labyrinthe

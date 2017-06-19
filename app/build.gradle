@@ -7,13 +7,16 @@ android {
     defaultConfig {
         applicationId "sdz.Labyrinthe"
         minSdkVersion 7
-        targetSdkVersion 7
+        targetSdkVersion 25
     }
 
     buildTypes {
         release {
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.txt'
+        }
+        debug {
+            debuggable true
         }
     }
 }

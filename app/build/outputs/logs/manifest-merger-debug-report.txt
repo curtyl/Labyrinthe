@@ -16,9 +16,9 @@ ADDED from C:\Users\louis\Desktop\Projets\Labyrinthe\app\src\main\AndroidManifes
 	xmlns:android
 		ADDED from C:\Users\louis\Desktop\Projets\Labyrinthe\app\src\main\AndroidManifest.xml:2:11-69
 uses-sdk
-ADDED from C:\Users\louis\Desktop\Projets\Labyrinthe\app\src\main\AndroidManifest.xml:7:5-9:40
+ADDED from C:\Users\louis\Desktop\Projets\Labyrinthe\app\src\main\AndroidManifest.xml:7:5-9:41
 	android:targetSdkVersion
-		ADDED from C:\Users\louis\Desktop\Projets\Labyrinthe\app\src\main\AndroidManifest.xml:9:9-37
+		ADDED from C:\Users\louis\Desktop\Projets\Labyrinthe\app\src\main\AndroidManifest.xml:9:9-38
 		INJECTED from C:\Users\louis\Desktop\Projets\Labyrinthe\app\src\main\AndroidManifest.xml
 		INJECTED from C:\Users\louis\Desktop\Projets\Labyrinthe\app\src\main\AndroidManifest.xml
 	android:minSdkVersion

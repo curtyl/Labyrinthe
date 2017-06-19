@@ -6,7 +6,6 @@ import android.app.Activity;
 import android.app.AlertDialog;
 import android.app.Dialog;
 import android.content.DialogInterface;
-import android.graphics.Color;
 import android.os.Bundle;
 
 public class LabyrintheActivity extends Activity{
@@ -16,8 +15,6 @@ public class LabyrintheActivity extends Activity{
 	// Identifiant de la boite de dialogue de défaite
 	public static final int DEFEAT_DIALOG = 1;
 
-	// Le moteur graphique du jeu
-	private LabyrintheView mView = null;
 	// Le moteur physique du jeu
 	private LabyrintheEngine mEngine = null;
 
@@ -25,7 +22,7 @@ public class LabyrintheActivity extends Activity{
 	public void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 
-		mView = new LabyrintheView(this);
+		LabyrintheView mView = new LabyrintheView(this);
 		setContentView(mView);
 
 		mEngine = new LabyrintheEngine(this);
